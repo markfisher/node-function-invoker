@@ -13,7 +13,7 @@ app.post('/', function (req, res) {
     var resultx = fn(req.body);
     console.log("Result " + resultx);
     res.type("text/plain");
-    res.status(200).send(resultx);
+    res.status(200).send("" + resultx);
 });
 
 app.listen(PORT);
